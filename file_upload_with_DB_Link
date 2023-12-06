@@ -1,0 +1,7 @@
+$targetDirectory = "../uploads/"; // Specify the directory where you want to save uploaded files
+$targetFile = $targetDirectory . basename($_FILES["upload"]["name"]); // Get the file name
+$file_name_org = $_FILES["upload"]["name"] ;
+$file_dir_final = $targetDirectory .$phone .$file_name_org ;
+move_uploaded_file($_FILES["upload"]["tmp_name"], $file_dir_final ) ;
+ 
+$upload =  $file_dir_final ;
